@@ -9,7 +9,14 @@ Things learnt during developing this system:
 5. Learn to do migration using [golang-migrate](https://github.com/golang-migrate/migrate)
 6. Generate CRUD code using [SQLC](https://github.com/sqlc-dev/sqlc)
 7. Write unit tests for CRUD operations with the help of [Testify](https://github.com/stretchr/testify)
+8. Implement database transaction following the ACID Property
+    - Atomicity: Either all operations complete successfully or transaction fails and database is unchanged.
+    - Consistency: Database state must be valid after transaction.
+    - Isolation: concurrent transaction must not affect each other.
+    - Duratability: successfully transation data must be recorded in persistant storage.
 
 ## Diagrams
+
 ### Simple Banking System Database Schema
+
 ![Simple Banking System Database Schema](/docs/SimpleBank_Schema.png)
