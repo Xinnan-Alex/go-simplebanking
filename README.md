@@ -10,10 +10,11 @@ Things learnt during developing this system:
 6. Generate CRUD code using [SQLC](https://github.com/sqlc-dev/sqlc)
 7. Write unit tests for CRUD operations with the help of [Testify](https://github.com/stretchr/testify)
 8. Implement database transaction following the ACID Property
-    - Atomicity: Either all operations complete successfully or transaction fails and database is unchanged.
-    - Consistency: Database state must be valid after transaction.
-    - Isolation: concurrent transaction must not affect each other.
-    - Duratability: successfully transation data must be recorded in persistant storage.
+   - Atomicity: Either all operations complete successfully or transaction fails and database is unchanged.
+   - Consistency: Database state must be valid after transaction.
+   - Isolation: concurrent transaction must not affect each other.
+   - Duratability: successfully transation data must be recorded in persistant storage.
+9. Overcome deadlock by always updating the account with smaller ID first
 
 ## Diagrams
 
