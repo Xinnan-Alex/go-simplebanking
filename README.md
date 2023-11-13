@@ -15,6 +15,7 @@ Things learnt during developing this system:
    - Isolation: concurrent transaction must not affect each other.
    - Duratability: successfully transation data must be recorded in persistant storage.
 9. Overcome deadlock by always updating the account with smaller ID first
+10. Learnt how to use Github Action to build and test code with CI
 
 ## Diagrams
 
