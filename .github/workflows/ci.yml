@@ -23,7 +23,7 @@ jobs:
         # Provide the password for postgres
         env:
           POSTGRES_USER: root
-          POSTGRES_PASSWORD: secret
+          POSTGRES_PASSWORD: 0163626774
           POSTGRES_DB: simple_bank
         ports:
           # Maps tcp port 5432 on service container to the host
@@ -50,7 +50,7 @@ jobs:
           which migrate
 
       - name: Run migrations
-        run: migrate -path db/migration -database "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose up
+        run: migrate -path db/migration -database "postgresql://root:0163626774@localhost:5432/simple_bank?sslmode=disable" -verbose up
 
       - name: Test
         run: make test
