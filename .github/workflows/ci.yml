@@ -19,11 +19,11 @@ jobs:
       # Label used to access the service container
       postgres:
         # Docker Hub image
-        image: postgres:16
+        image: postgres:16.0-alpine3.18
         # Provide the password for postgres
         env:
           POSTGRES_USER: root
-          POSTGRES_PASSWORD: 0163626774
+          POSTGRES_PASSWORD: secret
           POSTGRES_DB: simple_bank
         ports:
           # Maps tcp port 5432 on service container to the host
@@ -50,7 +50,7 @@ jobs:
           which migrate
 
       - name: Run migrations
-        run: make migrateup
+        run: migrate -path db/migration -database "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose up
 
       - name: Test
         run: make test
