@@ -14,8 +14,9 @@ Things learnt during developing this system:
    - Consistency: Database state must be valid after transaction.
    - Isolation: concurrent transaction must not affect each other.
    - Duratability: successfully transation data must be recorded in persistant storage.
-9. Overcome deadlock by always updating the account with smaller ID first
-10. Learnt how to use Github Action to build and test code with CI
+9. Overcome deadlock by always updating the account with smaller ID first.
+10. Learnt how to use Github Action to build and test code with CI.
+11. Implemented REST API Endpoint using Gin Framework, used built-in validator to validate JSON content in request body, query params and uri params.
 
 ## Diagrams
 
