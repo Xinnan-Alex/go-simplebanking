@@ -16,7 +16,9 @@ Things learnt during developing this system:
    - Duratability: successfully transation data must be recorded in persistant storage.
 9. Overcome deadlock by always updating the account with smaller ID first.
 10. Learnt how to use Github Action to build and test code with CI.
-11. Implemented REST API Endpoint using Gin Framework, used built-in validator to validate JSON content in request body, query params and uri params.
+11. Implemented REST API Endpoint using [Gin Framework](https://github.com/gin-gonic/gin), used built-in validator to validate JSON content in request body, query params and uri params.
+12. Use [Golang Viper](https://github.com/spf13/viper) Library to load config using file/environmental variable
+13. Use [GoMock](https://github.com/uber-go/mock) Library to create a mockdb for API Testing
 
 ## Diagrams
 
