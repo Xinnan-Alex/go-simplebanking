@@ -10,6 +10,7 @@ import (
 
 	mockdb "github.com/Xinnan-Alex/simplebank/db/mock"
 	db "github.com/Xinnan-Alex/simplebank/db/sqlc"
+	"github.com/Xinnan-Alex/simplebank/util"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
@@ -22,9 +23,9 @@ func TestCreateTransfer(t *testing.T) {
 	account2 := randomAccount()
 	account3 := randomAccount()
 
-	account1.Currency = "USD"
-	account2.Currency = "USD"
-	account3.Currency = "MYR"
+	account1.Currency = util.USD
+	account2.Currency = util.USD
+	account3.Currency = util.MYR
 
 	amount := int64(10)
 

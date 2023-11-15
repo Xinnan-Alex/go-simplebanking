@@ -19,6 +19,7 @@ Things learnt during developing this system:
 11. Implemented REST API Endpoint using [Gin Framework](https://github.com/gin-gonic/gin), used built-in validator to validate JSON content in request body, query params and uri params.
 12. Use [Golang Viper](https://github.com/spf13/viper) Library to load config using file/environmental variable
 13. Use [GoMock](https://github.com/uber-go/mock) Library to create a mockdb for API Testing
+14. Create a custom validator and register it into Gin Framework, currency validator
 
 ## Diagrams
 
