@@ -20,6 +20,7 @@ Things learnt during developing this system:
 12. Use [Golang Viper](https://github.com/spf13/viper) Library to load config using file/environmental variable
 13. Use [GoMock](https://github.com/uber-go/mock) Library to create a mockdb for API Testing
 14. Create a custom validator and register it into Gin Framework, currency validator
+15. Created custom matcher for creating unit test for Create User API Endpoint using GoMock.
 
 ## Diagrams
 
