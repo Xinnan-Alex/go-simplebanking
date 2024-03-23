@@ -21,6 +21,8 @@ Things learnt during developing this system:
 13. Use [GoMock](https://github.com/uber-go/mock) Library to create a mockdb for API Testing
 14. Create a custom validator and register it into Gin Framework, currency validator
 15. Created custom matcher for creating unit test for Create User API Endpoint using GoMock.
+16. Learn the differences between JWT and PASETO and identify why PASETO is much more secured than using JWT.
+17. Implemented JWT/Paseto Token Maker using [JWT](https://github.com/golang-jwt/jwt) and [PASETO](https://github.com/o1egl/paseto) Library.
 
 ## Diagrams
 
