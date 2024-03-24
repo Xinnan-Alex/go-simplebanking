@@ -26,6 +26,7 @@ Things learnt during developing this system:
 18. Login API will now create a JWT/Paseto token depending on which TokenMaker is initialised.
 19. Implement an authentication middleware to authenticate API endpoints.
 20. Implement unit tests for testing authentication middleware and authenticated API endpoints.
+21. Create a Dockerfile Image to build and run the app - optimised with only copying the go binary file into the image
 
 ## Diagrams
 
