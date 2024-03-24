@@ -29,6 +29,7 @@ Things learnt during developing this system:
 21. Create a Dockerfile Image to build and run the app - optimised with only copying the go binary file into the image
 22. Learn to connect two seperated container using network with command `docker network create networkname` and connect them with command `docker network connect networkname containername`. You can also connect it when running a container by specifying in the docker run command `docker run --name containername --network networkname -p 8080:8080 -e GIN_MODE=release -e DB_SOURCE="postgresql://root:password@postgrescontainername:5432/simple_bank?sslmode=disable" simplebank:latest`. By doing so, you don't have to specify the IP of the postgres container, you can just provide the container name.
 23. Learn to use docker composes to spin up multiple containers at the same time (stack) and also modify the startup sequence of each container using [wait-for](https://github.com/eficode/wait-for) script.
+24. Learn to setup a user/group in AWS and configure github actions to build and push docker images to AWS ECR (Elastic Container Registry)
 
 ## Diagrams
 
