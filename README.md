@@ -13,16 +13,19 @@ Things learnt during developing this system:
    - Atomicity: Either all operations complete successfully or transaction fails and database is unchanged.
    - Consistency: Database state must be valid after transaction.
    - Isolation: concurrent transaction must not affect each other.
-   - Duratability: successfully transation data must be recorded in persistant storage.
+   - Durability: successfully transaction data must be recorded in persistant storage.
 9. Overcome deadlock by always updating the account with smaller ID first.
 10. Learnt how to use Github Action to build and test code with CI.
 11. Implemented REST API Endpoint using [Gin Framework](https://github.com/gin-gonic/gin), used built-in validator to validate JSON content in request body, query params and uri params.
 12. Use [Golang Viper](https://github.com/spf13/viper) Library to load config using file/environmental variable
 13. Use [GoMock](https://github.com/uber-go/mock) Library to create a mockdb for API Testing
 14. Create a custom validator and register it into Gin Framework, currency validator
-15. Created custom matcher for creating unit test for Create User API Endpoint using GoMock.
+15. Create custom matcher for creating unit test for Create User API Endpoint using GoMock.
 16. Learn the differences between JWT and PASETO and identify why PASETO is much more secured than using JWT.
-17. Implemented JWT/Paseto Token Maker using [JWT](https://github.com/golang-jwt/jwt) and [PASETO](https://github.com/o1egl/paseto) Library.
+17. Implement JWT/Paseto Token Maker using [JWT](https://github.com/golang-jwt/jwt) and [PASETO](https://github.com/o1egl/paseto) Library.
+18. Login API will now create a JWT/Paseto token depending on which TokenMaker is initialised.
+19. Implement an authentication middleware to authenticate API endpoints.
+20. Implement unit tests for testing authentication middleware and authenticated API endpoints.
 
 ## Diagrams
 

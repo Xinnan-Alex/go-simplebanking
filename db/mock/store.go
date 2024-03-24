@@ -5,6 +5,7 @@
 //
 //	mockgen -package mockdb -destination db/mock/store.go github.com/Xinnan-Alex/simplebank/db/sqlc Store
 //
+
 // Package mockdb is a generated GoMock package.
 package mockdb
 
