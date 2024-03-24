@@ -27,6 +27,7 @@ Things learnt during developing this system:
 19. Implement an authentication middleware to authenticate API endpoints.
 20. Implement unit tests for testing authentication middleware and authenticated API endpoints.
 21. Create a Dockerfile Image to build and run the app - optimised with only copying the go binary file into the image
+22. Learn to connect two seperated container using network with command `docker network create networkname` and connect them with command `docker network connect networkname containername`. You can also connect it when running a container by specifying in the docker run command `docker run --name containername --network networkname -p 8080:8080 -e GIN_MODE=release -e DB_SOURCE="postgresql://root:password@postgrescontainername:5432/simple_bank?sslmode=disable" simplebank:latest`. By doing so, you don't have to specify the IP of the postgres container, you can just provide the container name.
 
 ## Diagrams
 
